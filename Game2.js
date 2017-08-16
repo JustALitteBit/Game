@@ -40,10 +40,16 @@ function GameIntro(){
   ctx.fillStyle = "#ffffff";
   ctx.fillText("Instructions",455,175);
   ctx.font = "lighter 40px VT323";
-  ctx.fillText("You are at Gracey's Diner", 450,270);
-  ctx.fillText("and you have $20 to spend.",445,320);
-  ctx.fillText("Select 1 main course and 1",445, 370);
-  ctx.fillText("drink from the menu.", 490,420);
-  ctx.fillText("The sides are optional.",470,470)
+  ctx.fillText("You are at Gracey's Diner", 450,260);
+  ctx.fillText("and you have $20 to spend.",445,310);
+  ctx.fillText("Select 1 main course and 1",445, 360);
+  ctx.fillText("drink from the menu.", 490,410);
+  ctx.fillText("The sides are optional.",470,460);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.lineWidth="6";
+  ctx.strokeStyle="#ffffff";
+  ctx.rect(550,480,200,70);
+  ctx.fillText("START",610,525);
   ctx.stroke();
 }
