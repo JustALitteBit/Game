@@ -1,78 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-
-body {
-    background-color: #000000;
-}
-canvas {
-    background-color: #000000;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -(782/4)px;
-    margin-top: -(211/4)px;
-}
-/*
-img{
-  padding-left: 0;
-  padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}*/
-</style>
-</head>
-<body onload="startGame()">
-    <img id="Logo" width="782" height="211" src="Logo.png" style="position:absolute;" align="middle"></img>
-<script>
-
-// function show_image(src, width, height) {
-//     var img = document.createElement("img");
-//     img.src = src;
-//     img.width = width;
-//     img.height = height;
-//
-//     // This next line will just add it to the <body> tag
-//     document.body.appendChild(img);
-// }
-
-
-function show_image() {
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("Logo");
-    ctx.drawImage(img);
-}
-
-function startGame() {
-  new show_image();
-  myGameArea.start();
-}
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 1330;
-        this.canvas.height = 640;
-        // canvas.style = "position:absolute; left: 50%; width: 400px; margin-left: -200px;";
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body{
+      background-color: #000000;
     }
-}
+    canvas {
+      background-color: #000000;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
 
-</script>
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -400px;
+      margin-top: -150px;
+      display: block;
+    }
+  </style>
+</head>
+<img id="Logo" width="782" height="211" src="Logo.png"></img>
+<button id="StartButton"></button>
+<body onload = "Intro()">
 
-<!-- <p>We have created a game area! (or at least an empty canvas)</p> -->
-
+  <canvas id="myCanvas" width="1300" height="640">
+  </canvas>
+  <script>
+    function Intro(){
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("Logo");
+      ctx.drawImage(img,canvas.width/4,canvas.height/2);
+      
+    }
+  </script>
 </body>
 </html>
