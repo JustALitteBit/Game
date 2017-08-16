@@ -1,3 +1,5 @@
+var state = 1;
+
 function Intro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
@@ -7,23 +9,29 @@ function Intro(){
   ctx.drawImage(StartButton,500,100);
 }
 
-function changeImage()
-{
+
+function changeImage(){
   document.images["StartButton"].src= "StartButton.png";
   return true;
 }
-function changeImageBack()
-{
+function changeImageBack(){
   document.images["StartButton"].src = "StartButton.png";
   return true;
 }
-function handleMDown()
-{
+function handleMDown(){
   document.images["StartButton"].src = "StartButton.png";
   return true;
 }
-function handleMUp()
-{
+function handleMUp(){
   changeImage();
   return true;
+}
+function GameIntro(){
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  document.getElementById('Logo').setAttribute("style","visibility:hidden");
+  document.getElementById('StartButton').setAttribute("style","visibility:hidden");
+  ctx.fillStyle = "#FF0000";
+  ctx.fillRect(20,20,150,100);
+  ctx.stroke();
 }
