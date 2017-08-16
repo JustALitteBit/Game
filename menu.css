@@ -1,0 +1,26 @@
+html{
+  background-color: #FFFAC4;
+  font-family: "Assistant";
+}
+
+.col{
+display: inline-block;
+position: relative;
+padding:80px 150px;
+text-align: center;
+}
+
+p1{
+  font-size: 2.5em;
+  letter-spacing: 1.3px;
+}
+
+p2{
+  font-size: 2em;
+  letter-spacing: 1.1px;
+}
+
+p3{
+  font-size: 2em;
+  letter-spacing: 1.1px;
+}
