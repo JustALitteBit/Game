@@ -29,9 +29,21 @@ function handleMUp(){
 function GameIntro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
+  document.body.style.fontFamily ='VT323';
   document.getElementById('Logo').setAttribute("style","visibility:hidden");
   document.getElementById('StartButton').setAttribute("style","visibility:hidden");
-  ctx.fillStyle = "#FF0000";
-  ctx.fillRect(20,20,150,100);
+  ctx.beginPath();
+  ctx.lineWidth="6";
+  ctx.strokeStyle="#ffffff";
+  ctx.rect(400,75,500,500);
+  ctx.font = "lighter 80px VT323";
+  ctx.fillStyle = "#ffffff";
+  ctx.fillText("Instructions",455,175);
+  ctx.font = "lighter 40px VT323";
+  ctx.fillText("You are at Gracey's Diner", 450,270);
+  ctx.fillText("and you have $20 to spend.",445,320);
+  ctx.fillText("Select 1 main course and 1",445, 370);
+  ctx.fillText("drink from the menu.", 490,420);
+  ctx.fillText("The sides are optional.",470,470)
   ctx.stroke();
 }
