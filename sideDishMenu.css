@@ -1,0 +1,10 @@
+html{
+background-color: #FFFAC4;
+}
+
+.col{
+display: inline-block;
+position: relative;
+padding:150px 200px;
+text-align: center;
+}
