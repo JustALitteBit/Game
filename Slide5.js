@@ -37,7 +37,7 @@ var continueButton=function(){
 	rect(115, 250, 175, 50);
 	textSize(20);
 	fill(250, 250, 250);
-	text("press SPACE to", 130, 270);
+	text("press any key to", 130, 270);
 	fill(250, 250, 250);
 	text("continue", 163, 290);
 }
