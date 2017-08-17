@@ -29,10 +29,11 @@ canvas {
 }
 
 .StartGameButton{
+  visibility:hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -100px;
-  margin-top: 300px;
+  margin-left: -90px;
+  margin-top: 155px;
   display: block;
 }
