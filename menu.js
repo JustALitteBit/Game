@@ -205,5 +205,7 @@ function showBorderCoffee(){
 }
 
 function order(){
-  alert("You ordered" + user_order);
+  var answer = confirm ("You ordered" + user_order +". Ready to play?")
+if (answer)
+    alert ("Ok")
 }
