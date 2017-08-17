@@ -207,5 +207,5 @@ function showBorderCoffee(){
 function order(){
   var answer = confirm ("You ordered " + user_order +". Ready to play?")
 if (answer)
-  window.location.href='https://JustALitteBit';
+  window.location.href='https://justalittebit.github.io/Game/Slide5.html';
 }
