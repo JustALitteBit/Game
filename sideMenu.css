@@ -6,7 +6,8 @@ html{
 .col{
 display: inline-block;
 position: relative;
-padding:60px 140px;
+padding:30px 30px;
+margin-left: 180px;
 text-align: center;
 }
 
