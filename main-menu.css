@@ -25,3 +25,12 @@ p3{
   font-size: 2em;
   letter-spacing: 1.1px;
 }
+
+.continue{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 1110px;
+  margin-top: 200px;
+  display: block;
+}
