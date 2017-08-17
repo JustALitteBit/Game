@@ -3,7 +3,7 @@ var state = 1;
 function Intro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
-  var img = document.getElementById("Logo");
+  var img = document.images["Logo"];
   ctx.drawImage(img,canvas.width/4,canvas.height/2);
   var StartButton = document.images["StartButton"];
   ctx.drawImage(StartButton,500,100);
