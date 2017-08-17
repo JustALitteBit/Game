@@ -1,4 +1,5 @@
-user_order = []
+main_order = []
+side_order = []
 order_price = []
 
 // make sure to allow to the user to adjust the amt of side dishes they want with up and down arrows
@@ -14,41 +15,41 @@ function budget() {
 
 
 function side1() {
-  user_order.push("fries");
+  side_order.push("fries");
   order_price.push(2.00);
   console.log(user_order);
 }
 
 function side2() {
-  user_order.push("salad");
+  side_order.push("salad");
   order_price.push(3.50);
   console.log(user_order);
 
 }
 
 function side3() {
-  user_order.push("chicken nuggets");
+  side_order.push("chicken nuggets");
   order_price.push(3.75);
   console.log(user_order);
 
 }
 
 function side4() {
-  user_order.push("soup");
+  side_order.push("soup");
   order_price.push(4.60);
   console.log(user_order);
 
 }
 
 function side5() {
-  user_order.push("pie");
+  side_order.push("pie");
   order_price.push(3.80);
   console.log(user_order);
 
 }
 
 function side6() {
-  user_order.push("parfait");
+  side_order.push("parfait");
   order_price.push(4.00);
   console.log(user_order);
 
@@ -128,21 +129,21 @@ function showBorderParfait(){
 
 
 function main1() {
-  user_order.push("burger");
+  main_order.push("burger");
   order_price.push(1.50);
   console.log(user_order);
 
 }
 
 function main2() {
-  user_order.push("spaghetti");
+  main_order.push("spaghetti");
   order_price.push(4.20);
   console.log(user_order);
 
 }
 
 function main3() {
-  user_order.push("pizza");
+  main_order.push("pizza");
   order_price.push(3.50);
   console.log(user_order);
 
@@ -168,19 +169,19 @@ function showBorderPizza(){
 
 
 function drink1() {
-  user_order.push("orange juice");
+  main_order.push("orange juice");
   order_price.push(1.75);
   console.log(user_order);
 }
 
 function drink2() {
-  user_order.push("soda");
+  main_order.push("soda");
   order_price.push(1.20);
   console.log(user_order);
 }
 
 function drink3() {
-  user_order.push("coffee");
+  main_order.push("coffee");
   order_price.push(2.80);
   console.log(user_order);
 }
@@ -205,5 +206,5 @@ function showBorderCoffee(){
 }
 
 function order(){
-  alert("Your order is" + " " + user_order)
+  alert("You ordered" + main_order + side_order.)
 }
