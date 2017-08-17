@@ -3,11 +3,13 @@ var state = 1;
 function Intro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
-  var img = document.images["Logo"];
-  ctx.drawImage(img,325,325);
+  var img = document.getElementById("Logo");
+  ctx.drawImage(Logo,canvas.width/4,canvas.height/2);
   var StartButton = document.images["StartButton"];
+  var StartGameButton = document.images["StartGameButton"];
   ctx.drawImage(StartButton,500,100);
-  document.getElementById("StartGameButton").setAttribute("style", "visibilty:hidden");
+  ctx.drawImage(StartGameButton,550,400);
+  document.getElementById('StartGameButton').setAttribute("style","visibility:hidden");
 }
 
 
@@ -46,7 +48,6 @@ function GameIntro(){
   ctx.fillText("Select 1 main course and 1",445, 360);
   ctx.fillText("drink from the menu.", 490,410);
   ctx.fillText("The sides are optional.",470,460);
-  document.getElementById('StartGameButton').setAttribute("style","visibilty:visible");
-  ctx.drawImage(StartGameButton,550,400);
+  document.getElementById('StartGameButton').setAttribute("style","visibility:visible");
   ctx.stroke();
 }
