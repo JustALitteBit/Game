@@ -4,7 +4,7 @@ function Intro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
   var img = document.getElementById("Logo");
-  ctx.drawImage(Logo,canvas.width/4,canvas.height/2);
+  ctx.drawImage(img,canvas.width/4,canvas.height/2);
   var StartButton = document.images["StartButton"];
   ctx.drawImage(StartButton,500,100);
   document.getElementById("StartGameButton").setAttribute("style", "visibilty:hidden");
