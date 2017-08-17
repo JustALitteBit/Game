@@ -1,4 +1,4 @@
-<!--menu page -->
+<!--side menu page -->
 <html>
 <head>
   <meta charset = "UTF-8">
@@ -9,6 +9,14 @@
   <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 </head>
 
+<style>
+.orderbutton {
+  background-color: white;
+  color: black;
+  font-family: "Assistant";
+  font-size: 1.4em;
+}
+</style>
 
 <body>
 <center>
@@ -20,36 +28,36 @@
   <div class="row1">
      <div class="col">
        <!-- change pic and idname after a new pic is added! -->
-      <button onClick="showBorderSalad()" id="saladbutton"><img src="salad.png" alt="salad"> </button> <div id="countersalad"> </div>
-      <br> Burger $1.50
-
-      </p>
+      <button onClick="showBorderSalad()" id="saladbutton"><img src="realsalad.png" alt="salad"> </button> <div id="salad"> </div>
+      <br> Salad $3.50
     </div>
     <div class="col">
       <!-- change pic and idname after a new pic is added! -->
-     <button onClick="showBorderNuggets()" id="nuggetsbutton"><img src="nuggets.png" alt="nuggets"> </button><div id="counternuggets"> </div>
-      <br> Spaghetti $4.20
+     <button onClick="showBorderNuggets()" id="nuggetsbutton"><img src="chicken-nuggets.png" alt="nuggets"> </button><div id="nuggets"> </div>
+      <br> Chicken Nuggets $3.75
     </div>
     <div class="col">
-      <button onClick="showBorderFries()" id = "friesbutton">  <img src="fries.png" alt="fries"> </button><div id="counterfries"> </div> 
-      <br> Fries $2
+      <button onClick="showBorderFries()" id = "friesbutton">  <img src="fries2.png" alt="fries"> </button><div id="fries"> </div>
+      <br> Fries $2.00
   </div>
 
   <div class="row2">
     <div class="col">
-      <button onClick="showBorderParfait()" id = "parfaitbutton">  <img src="parfait.png" alt="parfait"> </button>
-      <br> Fries $2
+      <button onClick="showBorderParfait()" id = "parfaitbutton">  <img src="parfait.png" alt="parfait"> </button> <div id="parfait"> </div>
+      <br> Parfait $4.00
     </div>
     <div class="col">
       <button onClick="showBorderSoup()" id = "soupbutton">  <img src="soup.png" alt="soup"> </button>
-      <br> Fries $2
+      <br> Soup $4.60
     </div>
     <div class="col">
       <button onClick="showBorderPie()" id = "piebutton">  <img src="pie.png" alt="pie"> </button>
-      <br> Fries $2
+      <br> Pie $3.80
     </div>
   </div>
 </div>
+
+<center> <button class="orderbutton" onClick="order()";>Ready to Order</button> </center>
 
 </body>
 </html>
