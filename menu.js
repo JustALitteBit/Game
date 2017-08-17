@@ -130,7 +130,7 @@ function showBorderParfait(){
 
 
 function main1() {
-  main_order.push("burger");
+  side_order.push("burger");/*comment*/
   order_price.push(1.50);
   console.log(user_order);
 
