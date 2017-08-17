@@ -207,5 +207,5 @@ function showBorderCoffee(){
 function order(){
   var answer = confirm ("You ordered " + user_order +". Ready to play?")
 if (answer)
-    alert ("Ok")
+  window.location.href='https://JustALitteBit';
 }
