@@ -7,6 +7,7 @@ function Intro(){
   ctx.drawImage(Logo,canvas.width/4,canvas.height/2);
   var StartButton = document.images["StartButton"];
   ctx.drawImage(StartButton,500,100);
+  document.getElementById("StartGameButton").setAttribute("style", "visibilty:hidden");
 }
 
 
@@ -45,11 +46,13 @@ function GameIntro(){
   ctx.fillText("Select 1 main course and 1",445, 360);
   ctx.fillText("drink from the menu.", 490,410);
   ctx.fillText("The sides are optional.",470,460);
+  document.getElementById("StartGameButton").setAttribute("style", "visibilty:visible");
+  ctx.drawImage(StartGameButton,550,400);
   ctx.stroke();
-  ctx.beginPath();
-  ctx.lineWidth="6";
-  ctx.strokeStyle="#ffffff";
-  ctx.rect(550,480,200,70);
-  ctx.fillText("START",610,525);
-  ctx.stroke();
+//   ctx.beginPath();
+//   ctx.lineWidth="6";
+//   ctx.strokeStyle="#ffffff";
+//   ctx.rect(550,480,200,70);
+//   ctx.fillText("START",610,525);
+//   ctx.stroke();
 }
