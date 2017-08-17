@@ -29,7 +29,6 @@ function handleMUp(){
 function GameIntro(){
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
-  var sgb = document.getElementById("StartGameButton");
   document.body.style.fontFamily ='VT323';
   document.getElementById('Logo').setAttribute("style","visibility:hidden");
   document.getElementById('StartButton').setAttribute("style","visibility:hidden");
@@ -52,6 +51,5 @@ function GameIntro(){
   ctx.strokeStyle="#ffffff";
   ctx.rect(550,480,200,70);
   ctx.fillText("START",610,525);
-  ctx.drawImage(sgb,550,400);
   ctx.stroke();
 }
