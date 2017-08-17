@@ -1,12 +1,12 @@
 html{
   background-color: #FFFAC4;
-  font-family: "Assistant";
+  font-family: "Assistant", sans-serif;
 }
 
 .col{
 display: inline-block;
 position: relative;
-padding:60px 150px;
+padding:60px 140px;
 text-align: center;
 }
 
@@ -16,9 +16,7 @@ height:128px;
 
 }
 
-.col a:hover{
-  border-color: black;
-}
+
 
 p1{
   font-size: 2.5em;
@@ -30,7 +28,39 @@ p2{
   letter-spacing: 1.1px;
 }
 
+#counterfries{
+  display: inline-block;
+  width:5px;
+}
+
+#counternuggets{
+  display: inline-block;
+  width:5px;
+}
+
+#countersalad{
+  display: inline-block;
+  width:5px;
+}
 
 #friesbutton{
-  border: solid white 5px; 
+  border: solid white 5px;
+}
+
+#saladbutton{
+  border: solid white 5px;
+}
+
+#nuggetsbutton{
+  border: solid white 5px;
+}
+
+#soupbutton{
+  border: solid white 5px;
+}
+#piebutton{
+  border: solid white 5px;
+}
+#parfaitbutton{
+  border: solid white 5px;
 }
