@@ -16,3 +16,16 @@ function timer() {
   ctx.fillRect(75,20,x,75);
   ctx.stroke();
 }
+
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+// </head>
+// <body onload="timer()">
+//   <canvas id="gameCanvas" width="1300" height="640">
+//   </canvas>
+//   <script type="text/javascript" src="timer.js"></script>
+// </body>
+// </html>
