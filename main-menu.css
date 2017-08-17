@@ -30,7 +30,7 @@ p3{
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: 1110px;
+  margin-left: -1110px;
   margin-top: 200px;
   display: block;
 }
