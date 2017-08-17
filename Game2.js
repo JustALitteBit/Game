@@ -6,7 +6,6 @@ function Intro(){
   var img = document.getElementById("Logo");
   ctx.drawImage(Logo,canvas.width/4,canvas.height/2);
   var StartButton = document.images["StartButton"];
-  document.getElementById("StartGameButton").setAttribute("style":,"visibilty:hidden");
   ctx.drawImage(StartButton,500,100);
 }
 
