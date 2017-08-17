@@ -206,5 +206,5 @@ function showBorderCoffee(){
 }
 
 function order(){
-  alert("You ordered" + main_order + side_order.)
+  alert("You ordered" + main_order + side_order);
 }
