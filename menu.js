@@ -130,8 +130,12 @@ function showBorderParfait(){
 function main1() {
   user_order.push("burger");/*comment*/
   order_price.push(1.50);
+  if (typeof(Storage) !== "undefined") {
+    localStorage.setItem("list",user_order);
+    document.getElementById("result").innerHTML = localStorage.getItem("list");
+  }
   console.log(user_order);
-
+ 
 }
 
 function main2() {
