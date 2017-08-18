@@ -33,3 +33,10 @@ p1 {
   line-height: 30px;
   color: white;
 }
+
+h3 {
+  font-family: "Assistant";
+  font-size:1.4em;
+  font-color: black;
+}
+  
