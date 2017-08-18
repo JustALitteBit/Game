@@ -21,3 +21,25 @@ function move() {
     }
   }
 }
+
+//user_order = [image1, image2, image3]
+
+// var counter = 0;
+// function clicking(){
+//   counter +=1;
+//   document.getElementById("clicks").innerHTML = counter;
+// }
+
+// function changingFood() {
+//     clicking()
+//     counter % 30 == 0 {
+//     for (i = 0, i < user_order.length, i++) {
+//       if (source[i].id === id) {
+//         return source[i];
+//     }
+//   }
+// }
+
+//function: if this item is in list, show it
+//function: run through items in list, order of visibility --- code???
+//connect all code
