@@ -1,6 +1,5 @@
 order_price = []
 user_order = []
-pics=[]
 
 // make sure to allow to the user to adjust the amt of side dishes they want with up and down arrows
 function budget() {
@@ -16,41 +15,41 @@ function budget() {
 
 function side1() {
   user_order.push("fries");
-  order_price.push(2.00);
+  order_price.push(1.5);
   console.log(user_order);
 }
 
 function side2() {
   user_order.push("salad");
-  order_price.push(3.50);
+  order_price.push(2.5);
   console.log(user_order);
 
 }
 
 function side3() {
   user_order.push("nuggets");
-  order_price.push(3.75);
+  order_price.push(2.0);
   console.log(user_order);
 
 }
 
 function side4() {
   user_order.push("soup");
-  order_price.push(4.60);
+  order_price.push(3.0);
   console.log(user_order);
 
 }
 
 function side5() {
   user_order.push("cheesecake");
-  order_price.push(3.80);
+  order_price.push(2.5);
   console.log(user_order);
 
 }
 
 function side6() {
   user_order.push("parfait");
-  order_price.push(4.00);
+  order_price.push(3.0);
   console.log(user_order);
 
 }
@@ -64,7 +63,6 @@ function showBorderFries(){
   document.getElementById("friesbutton").style.borderWidth ="4px";
   side1();
   budget();
-  pics.push(fries.png);
   }
   else if (clicks%2==0){
    document.getElementById("friesbutton").style.borderColor="#FFFAC4";
@@ -74,7 +72,7 @@ function showBorderFries(){
        delete user_order[i];
     }
   }
-  
+
  }
 }
 var clicks=0;
@@ -85,7 +83,6 @@ function showBorderSalad(){
   document.getElementById("saladbutton").style.borderWidth="4px";
   side2();
   budget();
-  pics.push(salad.png);
   }
   else if (clicks%2==0){
    document.getElementById("saladbutton").style.borderColor="#FFFAC4";
@@ -95,7 +92,7 @@ function showBorderSalad(){
        delete user_order[i];
     }
   }
- 
+
  }
 }
 
@@ -107,7 +104,6 @@ function showBorderNuggets(){
   document.getElementById("nuggetsbutton").style.borderWidth="4px";
   side3();
   budget();
-  pics.push(nuggets.png)
   }
   else if (clicks%2==0){
    document.getElementById("nuggetsbutton").style.borderColor="#FFFAC4";
@@ -129,7 +125,6 @@ function showBorderSoup(){
   document.getElementById("soupbutton").style.borderWidth="4px";
   side4();
   budget();
-  pics.push(soup.png)
   }
   else if (clicks%2==0){
    document.getElementById("soupbutton").style.borderColor="#FFFAC4";
@@ -139,7 +134,7 @@ function showBorderSoup(){
        delete user_order[i];
     }
   }
- 
+
 }
 }
 
@@ -151,7 +146,6 @@ function showBorderCheesecake(){
   document.getElementById("cheesecakebutton").style.borderWidth="4px";
   side5();
   budget();
-  pics.push(cheesecake.png)
   }
   else if (clicks%2==0){
    document.getElementById("cheesecakebutton").style.borderColor="#FFFAC4";
@@ -161,8 +155,6 @@ function showBorderCheesecake(){
        delete user_order[i];
     }
   }
-    
- 
 
 }
 }
@@ -175,7 +167,6 @@ function showBorderParfait(){
   document.getElementById("parfaitbutton").style.borderWidth="4px";
   side6();
   budget();
-  pics.push(parfait.png)
   }
   else if (clicks%2==0){
    document.getElementById("parfaitbutton").style.borderColor="#FFFAC4";
@@ -185,16 +176,15 @@ function showBorderParfait(){
        delete user_order[i];
     }
   }
- \
+
  }
 }
 
-// change name of this function and id name according to side dish
 
 
 function main1() {
   user_order.push("burger");/*comment*/
-  order_price.push(1.50);
+  order_price.push(3.5);
 //   if (typeof(Storage) !== "undefined") {
 //     localStorage.setItem("list",user_order);
 //     document.getElementById("result").innerHTML = localStorage.getItem("list");
@@ -206,14 +196,14 @@ function main1() {
 
 function main2() {
   user_order.push("spaghetti");
-  order_price.push(4.20);
+  order_price.push(5.0);
   console.log(user_order);
 
 }
 
 function main3() {
   user_order.push("pizza");
-  order_price.push(3.50);
+  order_price.push(2.5);
   console.log(user_order);
 
 }
@@ -226,7 +216,6 @@ function showBorderBurger(){
   document.getElementById("burgerbutton").style.borderWidth="4px";
   main1();
   budget();
-  pics.push(burger.png)
   }
   else if (clicks%2==0){
    document.getElementById("burgerbutton").style.borderColor="#FFFAC4";
@@ -236,7 +225,7 @@ function showBorderBurger(){
        delete user_order[i];
     }
   }
-  
+
  }
 }
 
@@ -248,7 +237,6 @@ function showBorderSpaghetti(){
   document.getElementById("spaghettibutton").style.borderWidth="4px";
   main2();
   budget();
-  pics.push(spaghetti.png)
   }
   else if (clicks%2==0){
    document.getElementById("spaghettibutton").style.borderColor="#FFFAC4";
@@ -258,7 +246,7 @@ function showBorderSpaghetti(){
        delete user_order[i];
     }
   }
-  
+
 }
 }
 
@@ -270,7 +258,6 @@ function showBorderPizza(){
   document.getElementById("pizzabutton").style.borderWidth="4px";
   main3();
   budget();
-  pics.push(pizza.png);
   }
   else if (clicks%2==0){
    document.getElementById("pizzabutton").style.borderColor="#FFFAC4";
@@ -280,27 +267,26 @@ function showBorderPizza(){
        delete user_order[i];
     }
   }
-   
- }
+
  }
 }
 
 
 function drink1() {
   user_order.push("orange juice");
-  order_price.push(1.75);
+  order_price.push(1.5);
   console.log(user_order);
 }
 
 function drink2() {
   user_order.push("soda");
-  order_price.push(1.20);
+  order_price.push(1.0);
   console.log(user_order);
 }
 
 function drink3() {
   user_order.push("coffee");
-  order_price.push(2.80);
+  order_price.push(2.0);
   console.log(user_order);
 }
 
@@ -312,7 +298,6 @@ function showBorderOJ(){
   document.getElementById("ojbutton").style.borderWidth="4px";
   drink1();
   budget();
-  pics.push(oj.png);
   }
   else if (clicks%2==0){
    document.getElementById("ojbutton").style.borderColor="#FFFAC4";
@@ -322,7 +307,7 @@ function showBorderOJ(){
        delete user_order[i];
     }
   }
-   
+
 }
 }
 
@@ -334,7 +319,6 @@ function showBorderSoda(){
   document.getElementById("sodabutton").style.borderWidth="4px";
   drink2();
   budget();
-  pics.push(soda.png);
   }
   else if (clicks%2==0){
    document.getElementById("sodabutton").style.borderColor="#FFFAC4";
@@ -344,7 +328,7 @@ function showBorderSoda(){
        delete user_order[i];
     }
   }
- 
+
 }
 }
 
@@ -357,7 +341,6 @@ function showBorderCoffee(){
   drink3();
   budget();
   var coffee= coffee.png
-  pics.push(coffee);
   }
   else if (clicks%2==0){
    document.getElementById("coffeebutton").style.borderColor="#FFFAC4";
@@ -365,6 +348,7 @@ function showBorderCoffee(){
     if(user_order[i] == "coffee") {
        user_order.splice(i, 1);
        delete user_order[i];
+
     }
   }
 
