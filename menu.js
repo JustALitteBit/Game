@@ -134,7 +134,7 @@ function main1() {
 //     localStorage.setItem("list",user_order);
 //     document.getElementById("result").innerHTML = localStorage.getItem("list");
 //   }
-  console.log(localStorage.user_order);
+  console.log(user_order);
  
 }
 
