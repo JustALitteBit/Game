@@ -1,5 +1,5 @@
 order_price = []
-user_order = []
+localStorage.user_order = []
 
 // make sure to allow to the user to adjust the amt of side dishes they want with up and down arrows
 function budget() {
