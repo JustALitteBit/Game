@@ -3,50 +3,83 @@
   <meta charset = "UTF-8">
 
   <link rel = "stylesheet" href="main-menu.css" type="text/css">
-  <script src="menu.js"> </script>
+  <script type="text/javascript" src="menu.js"> </script>
   <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 </head>
 
 
 <body>
 <center>
-<p1> Restaurant Menu <br> </p1>
+<p1> Restaurant Menu </p1>
 </center>
 
-<center> <p2> Main Dishes </p2> </center>
 <div class="container">
-  <div class="row1">
-    <div id="result" class="col">
-      <button onClick="showBorderBurger()" id="burgerbutton"> <img src="burger.png" alt="burger"> </button><div id="burger"> </div>
+  <div class="outsidecol">
+    <p2> Main Dishes </p2>
+  <div class="insidecol">
+      <button onClick="showBorderBurger()" id="burgerbutton"> <img src="burger.png" alt="burger"> </button>
       <br> Burger $1.50
     </div>
-    <div class="col">
-      <button onClick="showBorderSpaghetti()" id="spaghettibutton"> <img src="spaghetti.png" alt="spaghetti"> </button><div id="spaghetti"> </div>
+    <div class="insidecol">
+      <button onClick="showBorderSpaghetti()" id="spaghettibutton"> <img src="spaghetti.png" alt="spaghetti"> </button>
       <br> Spaghetti $4.20
     </div>
-    <div class="col">
-      <button onClick="showBorderPizza()" id="pizzabutton"> <img src="pizza.png" alt="pizza"> </button> <div id="pizza"> </div>
+    <div class="insidecol">
+      <button onClick="showBorderPizza()" id="pizzabutton"> <img src="pizza.png" alt="pizza"> </button>
       <br> Pizza $3.50
   </div>
-
-<center> <p3> Drinks </p3> </center>
-  <div class="row2">
-    <div class="col">
-      <button onClick="showBorderOJ()" id="ojbutton"> <img src="oj.png" alt="oj"> </button> <div id="oj"> </div>
+</div>
+    <div class="outsidecol">
+    <p2> Drinks </p2>
+    <div class="insidecol">
+      <button onClick="showBorderOJ()" id="ojbutton"> <img src="oj.png" alt="oj"> </button>
       <br> Orange Juice $1.75
     </div>
-    <div class="col">
-      <button onClick="showBorderSoda()" id="sodabutton"> <img src="soda.png" alt="soda"> </button> <div id="soda"> </div>
+    <div class="insidecol">
+      <button onClick="showBorderSoda()" id="sodabutton"> <img src="soda.png" alt="soda"> </button>
       <br> Soda $1.20
     </div>
-    <div class="col">
-      <button onClick="showBorderCoffee()" id="coffeebutton"> <img src="coffee.png" alt="coffee"> </button> <div id="coffee"> </div>
+    <div class="insidecol">
+      <button onClick="showBorderCoffee()" id="coffeebutton"> <img src="coffee.png" alt="coffee"> </button>
       <br> Coffee $2.80
     </div>
   </div>
-</div>
-<a href="https://justalittebit.github.io/Game/sideMenu.html">
-  <img id="continue" class="continue" src="continue.png">
-</a>
+
+    <div class="outsidecol">
+      <p2> Side Dishes </p2>
+       <div class="insidecol">
+         <!-- change pic and idname after a new pic is added! -->
+        <button onClick="showBorderSalad()" id="saladbutton"><img src="realsalad.png" alt="salad"> </button>
+        <br> Salad $3.50
+      </div>
+      <div class="insidecol">
+        <!-- change pic and idname after a new pic is added! -->
+       <button onClick="showBorderNuggets()" id="nuggetsbutton"><img src="chicken-nuggets.png" alt="nuggets"> </button>
+        <br> Chicken Nuggets $3.75
+      </div>
+      <div class="insidecol">
+        <button onClick="showBorderFries()" id = "friesbutton">  <img src="fries2.png" alt="fries"> </button>
+        <br> Fries $2.00
+    </div>
+  </div>
+
+    <div class="outsidecol">
+      <div class="insidecol">
+        <button onClick="showBorderParfait()" id = "parfaitbutton">  <img src="parfait.png" alt="parfait"> </button>
+        <br> Parfait $4.00
+      </div>
+      <div class="insidecol">
+        <button onClick="showBorderSoup()" id = "soupbutton">  <img src="soup.png" alt="soup"> </button>
+        <br> Soup $4.60
+      </div>
+      <div class="insidecol">
+        <button onClick="showBorderCheesecake()" id = "cheesecakebutton">  <img src="cheesecake.png" alt="cheesecake"> </button>
+        <br> Cheesecake $3.80
+      </div>
+    </div>
+  </div>
+
+  <center> <button class="orderbutton" onClick="order()";>Ready to Order</button> </center>
+
 </body>
 </html>
