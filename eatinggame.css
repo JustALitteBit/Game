@@ -1,0 +1,21 @@
+.eatbutton{
+  position: absolute;
+  padding: 30px 30px;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+p1 {
+  font-size: 1.3em;
+  font-family: "Assistant";
+  color: slategray;
+  margin-top:400px;
+  margin-left: 140px;
+  position: absolute;
+}
+
+.food {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 600px;
+}
