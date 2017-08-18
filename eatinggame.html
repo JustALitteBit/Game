@@ -3,17 +3,20 @@
 <head>
     <link rel = "stylesheet" href="eatinggame.css" type="text/css">
     <script type="text/javascript" src="eatinggame.js"> </script>
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 </head>
 
-<body onload="intro()">
+<div id ="game">
 
-<canvas id="gameCanvas" width="1300" height="640" style = "border: 1px solid;"></canvas>
+<button class ="eatbutton" onclick="clicking()" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
 
-  <button onClick="counter()" id="eatButton" img src="eatbutton.png" alt="eat button" width ="200" height="200"> </button>
-  <img id="food" src="food.jpeg" alt="food" width="200" height="200" style = "visibility:hidden">
+<img class ="food" id="food" src="food.jpeg" alt="food" width="200" height="200" style = "visibility:visible">
 
+<p1 id="clicks">Clicks</p1>
 
+</div> 
 
 
 </body>
 </html>
+
