@@ -134,8 +134,8 @@ function main1() {
 //     localStorage.setItem("list",user_order);
 //     document.getElementById("result").innerHTML = localStorage.getItem("list");
 //   }
-  sessionStorage.getItem('user_order');
-  sessionStorage.setItem('list', 'user_order');
+  sessionStorage.getItem(user_order);
+  sessionStorage.setItem('list', user_order);
   console.log(user_order);
  
 }
@@ -211,7 +211,7 @@ function showBorderCoffee(){
 }
 
 function order(){
-  var answer = confirm ("You ordered " + user_order +". Ready to play?")
+  var answer = confirm ("You ordered " + user_order +". Ready to play?" + (return(user_order))
 if (answer)
   window.location.href='https://justalittebit.github.io/Game/Slide5.html';
 }
