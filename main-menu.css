@@ -16,11 +16,11 @@ padding:1px 88px;
 text-align: center;
 }
 
-
-p1{
-  font-size: 2em;
-  letter-spacing: 1.3px;
+.container{
+  margin-top:6px;
 }
+
+
 
 p2{
   font-size: 1.5em;
@@ -32,5 +32,48 @@ p2{
   color: black;
   font-family: "Assistant", sans-serif;
   font-size: 1.4em;
-  margin-top: 30px; 
+  margin-top: 30px;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+h3 {
+  font-family: "Assistant";
+  font-size:1.4em;
+}
+
+
+
+
+.clicks{
+  display: block;
+  position: relative;
+
+}
+
+p1{
+  font-family: "Assistant", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+.eatbutton{
+  margin-top: 200px;
+}
+
+#countbtn{
+  margin-left: 20px;
 }
