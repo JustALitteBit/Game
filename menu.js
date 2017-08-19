@@ -92,6 +92,11 @@ function showBorderFries(){
       delete order_price[i];
    }
  }
+ for(var i=img_src.length-1; i>=0; i--){
+   if(img_src[i]=="fries.png"){
+     delete img_src[i];
+   }
+ }
  }
 }
 var clicks2=0;
@@ -116,6 +121,11 @@ function showBorderSalad(){
       // order_price.splice(i, 1);
       delete order_price[i];
    }
+  }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="salad.png"){
+      delete img_src[i];
+    }
   }
  }
 }
@@ -142,6 +152,11 @@ function showBorderNuggets(){
       // order_price.splice(i, 1);
       delete order_price[i];
    }
+  }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="nuggets.png"){
+      delete img_src[i];
+    }
   }
  }
 }
@@ -170,6 +185,11 @@ function showBorderSoup(){
 
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="soup.png"){
+      delete img_src[i];
+    }
+  }
 }
 }
 
@@ -196,6 +216,11 @@ function showBorderCheesecake(){
       delete order_price[i];
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="cheesecake.png"){
+      delete img_src[i];
+    }
+  }
 }
 }
 
@@ -221,6 +246,11 @@ function showBorderParfait(){
       // order_price.splice(i, 1);
       delete order_price[i];
    }
+  }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="parait.png"){
+      delete img_src[i];
+    }
   }
  }
 }
@@ -278,6 +308,11 @@ function showBorderBurger(){
       delete order_price[i];
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="burger.png"){
+      delete img_src[i];
+    }
+  }
  }
 }
 
@@ -304,6 +339,11 @@ function showBorderSpaghetti(){
       delete order_price[i];
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="spaghetti.png"){
+      delete img_src[i];
+    }
+  }
 }
 }
 
@@ -329,6 +369,11 @@ function showBorderPizza(){
       // order_price.splice(i, 1);
       delete order_price[i];
    }
+  }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="pizza.png"){
+      delete img_src[i];
+    }
   }
  }
 }
@@ -384,6 +429,11 @@ function showBorderOJ(){
       delete order_price[i];
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="juice.png"){
+      delete img_src[i];
+    }
+  }
 }
 }
 
@@ -410,6 +460,11 @@ function showBorderSoda(){
       // order_price.splice(i, 1);
       delete order_price[i];
    }
+  }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="soda.png"){
+      delete img_src[i];
+    }
   }
 }
 }
@@ -439,6 +494,11 @@ function showBorderCoffee(){
       delete order_price[i];
    }
   }
+  for(var i=img_src.length-1; i>=0; i--){
+    if(img_src[i]=="coffee.png"){
+      delete img_src[i];
+    }
+  }
 }
 }
 
@@ -448,9 +508,6 @@ function order(){
     }
     else {
       var answer = confirm ("You ordered " + user_order +". Ready to play?");
-      if (answer) {
-        window.location.href='https://justalittebit.github.io/Game/Slide5.html';
-    }
   }
 
 }
@@ -493,7 +550,7 @@ function move() {
   changeimg(0);
   var elem = document.getElementById("myBar");
   var width = 0;
-  var id = setInterval(frame, 400);
+  var id = setInterval(frame, 500);
   function frame() {
     if (width >= 100) {
       clearInterval(id);
@@ -511,12 +568,13 @@ var counter = 0;
 function clicking(){
   counter +=1;
   document.getElementById("clicks").innerHTML = counter;
-
+  
   var checkpt=60;
   for (var i=0; i<img_src.length; i++){
   if (counter > checkpt) {
     changeimg(i+1);
     checkpt+=60;
+
   }
 }
 }
