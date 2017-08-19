@@ -1,45 +1,35 @@
-var counter = 0;
-function clicking(){
-  counter +=1;
-  document.getElementById("clicks").innerHTML = counter;
-  if (counter == 20) {
-    document.getElementById("food").style.display = "none";
-  }
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href="main-menu.css" type="text/css">
+    <script type="text/javascript" src="menu.js"> </script>
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+</head>
 
-function move() {
-  var elem = document.getElementById("myBar");
-  var width = 0;
-  var id = setInterval(frame, 200);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++;
-      elem.style.width = width + '%';
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
+<div id ="game">
 
-//user_order = [image1, image2, image3]
+<body onload="move()">
 
-// var counter = 0;
-// function clicking(){
-//   counter +=1;
-//   document.getElementById("clicks").innerHTML = counter;
-// }
+<h3>Time Meter:</h3>
 
-// function changingFood() {
-//     clicking()
-//     counter % 30 == 0 {
-//     for (i = 0, i < user_order.length, i++) {
-//       if (source[i].id === id) {
-//         return source[i];
-//     }
-//   }
-// }
+<div id="myProgress">
+  <div id="myBar">0%</div>
+</div>
 
-//function: if this item is in list, show it
-//function: run through items in list, order of visibility --- code???
-//connect all code
+<div id="food">
+  <img class ="food" src="" alt="food">
+ </div>
+
+<div id="countbtn">
+  <button class ="eatbutton" onclick="clicking()" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
+  <div id="clicks"><p1> Clicks </p1></div>
+</div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
