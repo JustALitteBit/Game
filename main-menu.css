@@ -77,3 +77,14 @@ p1{
 #countbtn{
   margin-left: 20px;
 }
+
+#game{
+  margin-top: 50px;
+  height:100%;
+  width: 100%; 
+}
+
+.play{
+  width:100px;
+  height: 50px;
+}
