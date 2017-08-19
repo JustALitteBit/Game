@@ -1,5 +1,6 @@
 order_price = []
 user_order = []
+img_src = []
 
 // make sure to allow to the user to adjust the amt of side dishes they want with up and down arrows
 function budget() {
@@ -16,50 +17,55 @@ function budget() {
 function side1() {
   user_order.push("fries");
   order_price.push(1.5);
+  img_src.push("fries.png");
   console.log(user_order);
   console.log(order_price);
+  console.log(img_src);
 }
 
 function side2() {
   user_order.push("salad");
   order_price.push(2.5);
+  img_src.push("salad.png");
   console.log(user_order);
   console.log(order_price);
-
-
+  console.log(img_src);
 }
 
 function side3() {
   user_order.push("nuggets");
   order_price.push(2.0);
+  img_src.push("nuggets.png);
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 function side4() {
   user_order.push("soup");
   order_price.push(3.0);
+  img_src.push("soup.png");
   console.log(user_order);
   console.log(order_price);
-
-
+  console.log(img_src);
 }
 
 function side5() {
   user_order.push("cheesecake");
   order_price.push(2.5);
+  img_src.push("cheesecake.png);
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 function side6() {
   user_order.push("parfait");
   order_price.push(3.0);
+  img_src.push("parfait.png");
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 
@@ -224,23 +230,28 @@ function showBorderParfait(){
 function main1() {
   user_order.push("burger");/*comment*/
   order_price.push(3.5);
+  img_src.push("burger.png");
   console.log(user_order);
   console.log(order_price);
+  console.log(img_src);
 }
 
 function main2() {
   user_order.push("spaghetti");
   order_price.push(5.0);
+  img_src.push("spaghetti.png");
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 function main3() {
   user_order.push("pizza");
   order_price.push(2.50);
+  img_src.push("pizza.png");
   console.log(user_order);
   console.log(order_price);
+  console.log(img_src);
 
 }
 
@@ -326,24 +337,28 @@ function showBorderPizza(){
 function drink1() {
   user_order.push("orange juice");
   order_price.push(1.5);
+  img_src.push("juice.png");
   console.log(user_order);
   console.log(order_price);
+  console.log(img_src);
 }
 
 function drink2() {
   user_order.push("soda");
   order_price.push(1.0);
+  img_src.push("soda.png");
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 function drink3() {
   user_order.push("coffee");
   order_price.push(2.0);
+  img_src.push("coffee.png");
   console.log(user_order);
   console.log(order_price);
-
+  console.log(img_src);
 }
 
 var clicks9=0;
@@ -497,11 +512,11 @@ function clicking(){
   counter +=1;
   document.getElementById("clicks").innerHTML = counter;
 
-  var checkpt=40;
+  var checkpt=60;
   for (var i=0; i<img_src.length; i++){
   if (counter > checkpt) {
     changeimg(i+1);
-    checkpt+=40;
+    checkpt+=60;
   }
 }
 }
