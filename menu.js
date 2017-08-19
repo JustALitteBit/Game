@@ -487,7 +487,7 @@ function order(){
 //   container.appendChild(docFrag);
 // }
 
-var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
+// var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
 
 function move() {
   changeimg(0);
