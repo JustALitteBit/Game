@@ -35,7 +35,7 @@ function side2() {
 function side3() {
   user_order.push("nuggets");
   order_price.push(2.0);
-  img_src.push("nuggets.png);
+  img_src.push("nuggets.png");
   console.log(user_order);
   console.log(order_price);
   console.log(img_src);
@@ -53,7 +53,7 @@ function side4() {
 function side5() {
   user_order.push("cheesecake");
   order_price.push(2.5);
-  img_src.push("cheesecake.png);
+  img_src.push("cheesecake.png");
   console.log(user_order);
   console.log(order_price);
   console.log(img_src);
