@@ -17,12 +17,15 @@ function side1() {
   user_order.push("fries");
   order_price.push(1.5);
   console.log(user_order);
+  console.log(order_price);
 }
 
 function side2() {
   user_order.push("salad");
   order_price.push(2.5);
   console.log(user_order);
+  console.log(order_price);
+
 
 }
 
@@ -30,6 +33,7 @@ function side3() {
   user_order.push("nuggets");
   order_price.push(2.0);
   console.log(user_order);
+  console.log(order_price);
 
 }
 
@@ -37,6 +41,8 @@ function side4() {
   user_order.push("soup");
   order_price.push(3.0);
   console.log(user_order);
+  console.log(order_price);
+
 
 }
 
@@ -44,6 +50,7 @@ function side5() {
   user_order.push("cheesecake");
   order_price.push(2.5);
   console.log(user_order);
+  console.log(order_price);
 
 }
 
@@ -51,132 +58,164 @@ function side6() {
   user_order.push("parfait");
   order_price.push(3.0);
   console.log(user_order);
+  console.log(order_price);
 
 }
 
 
-var clicks=0;
+var clicks1=0;
 function showBorderFries(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks1+=1;
+  if (clicks1%2==1){
   document.getElementById("friesbutton").style.borderColor = "#ff7733";
   document.getElementById("friesbutton").style.borderWidth ="4px";
   side1();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks1%2==0){
    document.getElementById("friesbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "fries") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
-    }
+      }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 1.5) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+ }
  }
 }
-var clicks=0;
+var clicks2=0;
 function showBorderSalad(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks2+=1;
+  if (clicks2 %2 ==1){
   document.getElementById("saladbutton").style.borderColor = "#ff7733";
   document.getElementById("saladbutton").style.borderWidth="4px";
   side2();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks2%2==0){
    document.getElementById("saladbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "salad") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 2.5) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
  }
 }
 
-var clicks=0;
+var clicks12=0;
 function showBorderNuggets(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks12+=1;
+  if (clicks12%2==1){
   document.getElementById("nuggetsbutton").style.borderColor = "#ff7733";
   document.getElementById("nuggetsbutton").style.borderWidth="4px";
   side3();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks12%2==0){
    document.getElementById("nuggetsbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "nuggets") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 2.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
  }
 }
 
-var clicks=0;
+var clicks3=0;
 function showBorderSoup(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks3+=1;
+  if (clicks3%2==1){
   document.getElementById("soupbutton").style.borderColor = "#ff7733";
   document.getElementById("soupbutton").style.borderWidth="4px";
   side4();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks3%2==0){
    document.getElementById("soupbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "soup") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 3.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
 
+   }
+  }
 }
 }
 
-var clicks=0;
+var clicks4=0;
 function showBorderCheesecake(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks4+=1;
+  if (clicks4%2==1){
   document.getElementById("cheesecakebutton").style.borderColor = "#ff7733";
   document.getElementById("cheesecakebutton").style.borderWidth="4px";
   side5();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks4%2==0){
    document.getElementById("cheesecakebutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "cheesecake") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 2.5) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
 }
 }
 
-var clicks=0;
+var clicks5=0;
 function showBorderParfait(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks5+=1;
+  if (clicks5%2==1){
   document.getElementById("parfaitbutton").style.borderColor = "#ff7733";
   document.getElementById("parfaitbutton").style.borderWidth="4px";
   side6();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks5%2==0){
    document.getElementById("parfaitbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "parfait") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 3.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
  }
 }
 
@@ -185,89 +224,101 @@ function showBorderParfait(){
 function main1() {
   user_order.push("burger");/*comment*/
   order_price.push(3.5);
-//   if (typeof(Storage) !== "undefined") {
-//     localStorage.setItem("list",user_order);
-//     document.getElementById("result").innerHTML = localStorage.getItem("list");
-//   }
-//   sessionStorage.getItem(user_order);
-//   sessionStorage.setItem('list', user_order);
-
+  console.log(user_order);
+  console.log(order_price);
 }
 
 function main2() {
   user_order.push("spaghetti");
   order_price.push(5.0);
   console.log(user_order);
+  console.log(order_price);
 
 }
 
 function main3() {
   user_order.push("pizza");
-  order_price.push(2.5);
+  order_price.push(2.50);
   console.log(user_order);
+  console.log(order_price);
 
 }
 
-var clicks=0;
+var clicks6=0;
 function showBorderBurger(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks6+=1;
+  if (clicks6%2==1){
   document.getElementById("burgerbutton").style.borderColor = "#ff7733";
   document.getElementById("burgerbutton").style.borderWidth="4px";
   main1();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks6%2==0){
    document.getElementById("burgerbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "burger") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 3.5) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
  }
 }
 
-var clicks=0;
+var clicks7=0;
 function showBorderSpaghetti(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks7+=1;
+  if (clicks7%2==1){
   document.getElementById("spaghettibutton").style.borderColor = "#ff7733";
   document.getElementById("spaghettibutton").style.borderWidth="4px";
   main2();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks7%2==0){
    document.getElementById("spaghettibutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "spaghetti") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 5.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
 }
 }
 
-var clicks=0;
+var clicks8=0;
 function showBorderPizza(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks8+=1;
+  if (clicks8%2==1){
   document.getElementById("pizzabutton").style.borderColor = "#ff7733";
   document.getElementById("pizzabutton").style.borderWidth="4px";
   main3();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks8%2==0){
    document.getElementById("pizzabutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "pizza") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 2.50) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
  }
 }
 
@@ -276,82 +327,103 @@ function drink1() {
   user_order.push("orange juice");
   order_price.push(1.5);
   console.log(user_order);
+  console.log(order_price);
 }
 
 function drink2() {
   user_order.push("soda");
   order_price.push(1.0);
   console.log(user_order);
+  console.log(order_price);
+
 }
 
 function drink3() {
   user_order.push("coffee");
   order_price.push(2.0);
   console.log(user_order);
+  console.log(order_price);
+
 }
 
-var clicks=0;
+var clicks9=0;
 function showBorderOJ(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks9+=1;
+  if (clicks9%2==1){
   document.getElementById("ojbutton").style.borderColor = "#ff7733";
   document.getElementById("ojbutton").style.borderWidth="4px";
   drink1();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks9%2==0){
    document.getElementById("ojbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "orange juice") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 1.5) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
 }
 }
 
-var clicks=0;
+var clicks10=0;
 function showBorderSoda(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks10+=1;
+  if (clicks10%2==1){
   document.getElementById("sodabutton").style.borderColor = "#ff7733";
   document.getElementById("sodabutton").style.borderWidth="4px";
   drink2();
   budget();
   }
-  else if (clicks%2==0){
+  else if (clicks10%2==0){
    document.getElementById("sodabutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "soda") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
+
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 1.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
 }
 }
 
-var clicks=0;
+var clicks11=0;
 function showBorderCoffee(){
-  clicks+=1;
-  if (clicks%2==1){
+  clicks11+=1;
+  if (clicks11%2==1){
   document.getElementById("coffeebutton").style.borderColor = "#ff7733";
   document.getElementById("coffeebutton").style.borderWidth="4px";
   drink3();
   budget();
-  var coffee= coffee.png
+  filter();
   }
-  else if (clicks%2==0){
+  else if (clicks11%2==0){
    document.getElementById("coffeebutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "coffee") {
-       user_order.splice(i, 1);
+      //  user_order.splice(i, 1);
        delete user_order[i];
 
     }
   }
-
+  for(var i = order_price.length - 1; i >= 0; i--) {
+   if(order_price[i] == 2.0) {
+      // order_price.splice(i, 1);
+      delete order_price[i];
+   }
+  }
 }
 }
 
@@ -365,4 +437,77 @@ function order(){
         window.location.href='https://justalittebit.github.io/Game/Slide5.html';
     }
   }
+
+}
+
+
+
+
+
+// function filter()
+// {
+// var words = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+//
+// var longWords = words.filter(function(word){
+//   return word.length > 6;
+//   console.log(longWords);
+// });
+// }
+
+//
+// function getPic(){
+//   var imgs = ['https://static.tumblr.com/rluyfrr/5J4mc976u/tumblr_lrcqhlp3ct1qjd5ryo1_500_large.jpg',
+//               'https://i.pinimg.com/originals/b0/a5/f3/b0a5f3a2de67b531143d40bf13d8835d.jpg',
+//               'https://static.tumblr.com/rluyfrr/5J4mc976u/tumblr_lrcqhlp3ct1qjd5ryo1_500_large.jpg',
+//               'https://i.pinimg.com/originals/b0/a5/f3/b0a5f3a2de67b531143d40bf13d8835d.jpg'];
+//   var container = document.getElementById('imagecontainer');
+//   var docFrag = document.createDocumentFragment();
+//
+//   imgs.forEach(function(url) {
+//       var img = document.createElement('img');
+//       img.src = url;
+//       docFrag.appendChild(img);
+// });
+//
+//   container.appendChild(docFrag);
+// }
+
+var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
+
+function move() {
+  changeimg(0);
+  var elem = document.getElementById("myBar");
+  var width = 0;
+  var id = setInterval(frame, 400);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+
+
+var counter = 0;
+function clicking(){
+  counter +=1;
+  document.getElementById("clicks").innerHTML = counter;
+
+  var checkpt=40;
+  for (var i=0; i<img_src.length; i++){
+  if (counter > checkpt) {
+    changeimg(i+1);
+    checkpt+=40;
+  }
+}
+}
+
+function changeimg(i){
+var container = document.getElementById("food");
+container.innerHTML = "<img src='"+img_src[i]+"' alt='my image'>";
+
 }
