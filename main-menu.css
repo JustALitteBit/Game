@@ -107,7 +107,7 @@ p2{
 
 h3 {
   font-family: "VT323";
-  font-size:1.4em;
+  font-size:1.5em;
   color: black;
 }
 
@@ -122,6 +122,12 @@ p1{
   font-family: "VT323";
   font-size: 2em;
   text-align: center;
+}
+
+p5{
+  font-family: "VT323";
+  font-size:1em;
+  margin-left: 20px;
 }
 
 
