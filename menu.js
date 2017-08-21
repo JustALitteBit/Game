@@ -1,6 +1,6 @@
 var music=document.getElementById("eatingMusic");
 function playEating() {
-  x.play();
+  music.play();
 }
 
 
