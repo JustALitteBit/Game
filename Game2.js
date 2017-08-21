@@ -44,10 +44,9 @@ function GameIntro(){
   ctx.fillText("Instructions",455,175);
   ctx.font = "lighter 40px VT323";
   ctx.fillText("You are at Gracey's Diner", 450,260);
-  ctx.fillText("and you have $20 to spend.",445,310);
-  ctx.fillText("Select 1 main course and 1",445, 360);
-  ctx.fillText("drink from the menu.", 490,410);
-  ctx.fillText("The sides are optional.",470,460);
+  ctx.fillText("and you have $25 to spend.",445,310);
+  ctx.fillText("Select at least 3 items",445, 360);
+  ctx.fillText("from the menu.", 490,410);
   document.getElementById('StartGameButton').setAttribute("style","visibility:visible");
   ctx.stroke();
 }
