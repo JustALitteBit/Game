@@ -554,6 +554,7 @@ function move() {
   function frame() {
     if (width >= 100) {
       clearInterval(id);
+      location.href='https://justalittebit.github.io/Game/GuiltTrip.html';
     } else {
       width++;
       elem.style.width = width + '%';
