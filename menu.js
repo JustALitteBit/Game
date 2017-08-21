@@ -490,12 +490,23 @@ function showBorderCoffee(){
 }
 
 function order(){
+
     if (user_order.length == 0) {
       alert("You must eat something! Why did you come here if you weren't going to order?");
-    } else {
-      var answer = confirm ("You ordered " + user_order +". Ready to play?");
-  }
 
+
+      }
+    else if (user_order.length<3){
+      alert("You must choose at least 3 items from the menu! Choose again.");
+
+    }
+    else {
+      var answer = confirm ("You ordered " + user_order +". Ready to play?");
+      if (answer){
+      // location.hash="#game";
+      document.getElementById("game").scrollIntoView(); 
+    }
+  }
 }
 
 
