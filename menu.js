@@ -618,5 +618,6 @@ function clicking(){
 
 function changeimg(i){
 var container = document.getElementById("food");
-container.innerHTML = "<img src='"+img_src[i]+"' alt='my image'>";
+// container.innerHTML = "<img src='"+img_src[i]+"' alt='my image'>";
+container.innerHTML = "<img src='"+img_src[i]+"' alt='my image' class='foodOrder'>";
 }
