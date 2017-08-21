@@ -3,6 +3,10 @@ function playEating() {
  var music = document.getElementById("eatingMusic").play();
 }
 
+function playBackground() {
+ var background = document.getElementById("backgroundMusic").play();
+}
+
 
 order_price = []
 user_order = []
