@@ -547,17 +547,30 @@ function move() {
   changeimg(0);
   var elem = document.getElementById("myBar");
   var width = 0;
-  var id = setInterval(frame, 300);
+  var id = setInterval(frame, 500);
   function frame() {
     if (width >= 100) {
       clearInterval(id);
-      window.location.replace("http://justalittebit.github.io/Game/GuiltTrip.html#");
+      go = true;
+      if (go == true) {
+      on();
+    }
+      //image code
     } else {
-      width++;
+      go = false;
+      width=width+2;
       elem.style.width = width + '%';
       elem.innerHTML = width * 1  + '%';
     }
   }
+}
+
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
 }
 
 function checkstart() {
