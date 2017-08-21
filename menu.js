@@ -550,7 +550,7 @@ function move() {
   changeimg(0);
   var elem = document.getElementById("myBar");
   var width = 0;
-  var id = setInterval(frame, 500);
+  var id = setInterval(frame, 300);
   function frame() {
     if (width >= 100) {
       clearInterval(id);
