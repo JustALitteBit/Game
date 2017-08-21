@@ -617,7 +617,8 @@ function clicking(){
 }
 
 function changeimg(i){
-var container = document.getElementById("food");
+// var container = document.getElementById("food");
+var container = document.getElementById("foodOrder");
 container.innerHTML = "<img src='"+img_src[i]+"' alt='my image'>";
 
 }
