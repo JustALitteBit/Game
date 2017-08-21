@@ -507,8 +507,8 @@ function order(){
 
 
       }
-    else if (user_order.length<3){
-      alert("You must choose at least 3 items from the menu! Choose again.");
+    else if (user_order.length<2){
+      alert("You must choose at least 2 items from the menu! Choose again.");
 
     }
     else {
