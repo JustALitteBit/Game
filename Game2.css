@@ -31,7 +31,7 @@ canvas {
 .StartGameButton{
   visibility:hidden;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-left: -90px;
   margin-top: 155px;
