@@ -3,7 +3,8 @@ function playEating() {
  var music = document.getElementById("eatingMusic").play();
 }
 
-function playBackground() {
+
+window.onload = function playBackground() {
  var background = document.getElementById("backgroundMusic").play();
 }
 
