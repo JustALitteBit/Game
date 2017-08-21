@@ -45,8 +45,8 @@ function GameIntro(){
   ctx.font = "lighter 40px VT323";
   ctx.fillText("You are at Gracey's Diner", 450,260);
   ctx.fillText("and you have $25 to spend.",445,310);
-  ctx.fillText("Select at least 3 items",445, 360);
-  ctx.fillText("from the menu.", 490,410);
+  ctx.fillText("Select at least 4 items",475, 360);
+  ctx.fillText("from the menu.", 525,410);
   document.getElementById('StartGameButton').setAttribute("style","visibility:visible");
   ctx.stroke();
 }
