@@ -562,13 +562,21 @@ function move() {
   }
 }
 
-
+function checkstart() {
+  if (user_order.length == 0) {
+    alert("You haven't ordered anything...");
+  } else {
+    var hide = document.getElementById('startButton');
+    hide.style.visibility = "hidden"
+    move()
+  }
+}
 
 var counter = 0;
 function clicking(){
   counter +=1;
   document.getElementById("clicks").innerHTML = counter;
-  
+
   var checkpt=60;
   for (var i=0; i<img_src.length; i++){
   if (counter > checkpt) {
