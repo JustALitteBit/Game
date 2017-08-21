@@ -74,12 +74,12 @@ p2{
   margin-top: 30px;
 }
 
-.startbutton{
+.startButton{
   background-color: white;
   color: black;
   font-family: "VT323";
   font-size: 1.4em;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 #myProgress {
