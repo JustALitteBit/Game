@@ -3,6 +3,14 @@ html{
   font-family: "VT323";
 }
 
+#food{
+ background-image: url("background.png");
+ background-repeat: no-repeat;
+background-size: 80%;
+background-position: center;
+height:80%;
+z-index:0; 
+}
 
 .outsidecol{
 display: inline-block;
