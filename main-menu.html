@@ -25,6 +25,11 @@
       </a>
   </div>
 
+  <audio id="eatingMusic">
+    <source src="eating.mp3" type="audio/mpeg">
+  </audio>
+  
+  
 <center>
 <p1> Restaurant Menu </p1>
 </center>
@@ -112,7 +117,7 @@
    </div>
 
   <div id="countbtn">
-    <button class ="eatbutton" onclick="clicking()" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
+    <button class ="eatbutton" onclick="clicking(); playEating();" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
     <div id="clicks"><p1> Clicks </p1></div>
   </div>
 
