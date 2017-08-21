@@ -504,7 +504,11 @@ function order(){
       var answer = confirm ("You ordered " + user_order +". Ready to play?");
       if (answer){
       // location.hash="#game";
+        gameStarton();
+      }
+        if (window.onclick){
       document.getElementById("game").scrollIntoView(); 
+        }
     }
   }
 }
@@ -565,12 +569,16 @@ function move() {
   }
 }
 
-function on() {
+function gameOveron() {
     document.getElementById("overlay").style.display = "block";
 }
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
+function gameStarton(){
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function gameStartoff(){
+  document.getElementById("overlay2").style.display = "none";
 }
 
 function checkstart() {
