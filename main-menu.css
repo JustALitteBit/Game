@@ -12,6 +12,10 @@ height:80%;
 z-index:0;
 }
 
+.foodOrder{
+  margin-left:100px;
+}
+
 .outsidecol{
 display: inline-block;
 position: relative;
