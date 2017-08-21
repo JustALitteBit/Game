@@ -82,19 +82,17 @@ function showBorderFries(){
    document.getElementById("friesbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "fries") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+       user_order.splice(i, 1);
       }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 1.5) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
    }
  }
  for(var i=img_src.length-1; i>=0; i--){
    if(img_src[i]=="fries.png"){
-     delete img_src[i];
+     img_src.splice(i, 1);
    }
  }
  }
@@ -112,19 +110,17 @@ function showBorderSalad(){
    document.getElementById("saladbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "salad") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.5) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="salad.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
  }
@@ -143,19 +139,19 @@ function showBorderNuggets(){
    document.getElementById("nuggetsbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "nuggets") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+       user_order.splice(i, 1);
+
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="nuggets.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
  }
@@ -174,20 +170,17 @@ function showBorderSoup(){
    document.getElementById("soupbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "soup") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+       user_order.splice(i, 1);
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 3.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
-
+      order_price.splice(i, 1);
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="soup.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -206,19 +199,19 @@ function showBorderCheesecake(){
    document.getElementById("cheesecakebutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "cheesecake") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+       user_order.splice(i, 1);
+
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.5) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="cheesecake.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -237,19 +230,18 @@ function showBorderParfait(){
    document.getElementById("parfaitbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "parfait") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 3.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="parait.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
  }
@@ -298,19 +290,18 @@ function showBorderBurger(){
    document.getElementById("burgerbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "burger") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 3.5) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="burger.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
  }
@@ -329,19 +320,19 @@ function showBorderSpaghetti(){
    document.getElementById("spaghettibutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "spaghetti") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
+
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 5.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="spaghetti.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -360,19 +351,19 @@ function showBorderPizza(){
    document.getElementById("pizzabutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "pizza") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
+
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.50) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="pizza.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
  }
@@ -419,19 +410,17 @@ function showBorderOJ(){
    document.getElementById("ojbutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "orange juice") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 1.5) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="juice.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -450,20 +439,19 @@ function showBorderSoda(){
    document.getElementById("sodabutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "soda") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+      user_order.splice(i, 1);
 
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 1.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="soda.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -483,20 +471,19 @@ function showBorderCoffee(){
    document.getElementById("coffeebutton").style.borderColor="#FFFAC4";
    for(var i = user_order.length - 1; i >= 0; i--) {
     if(user_order[i] == "coffee") {
-      //  user_order.splice(i, 1);
-       delete user_order[i];
+       user_order.splice(i, 1);
 
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.0) {
-      // order_price.splice(i, 1);
-      delete order_price[i];
+      order_price.splice(i, 1);
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
     if(img_src[i]=="coffee.png"){
-      delete img_src[i];
+      img_src.splice(i, 1);
     }
   }
 }
@@ -505,8 +492,7 @@ function showBorderCoffee(){
 function order(){
     if (user_order.length == 0) {
       alert("You must eat something! Why did you come here if you weren't going to order?");
-    }
-    else {
+    } else {
       var answer = confirm ("You ordered " + user_order +". Ready to play?");
   }
 
@@ -562,8 +548,6 @@ function move() {
     }
   }
 }
-
-
 
 function checkstart() {
   if (user_order.length == 0) {
