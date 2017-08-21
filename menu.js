@@ -1,11 +1,11 @@
 
 function playEating() {
- var music = document.getElementById("eatingMusic").play();
+ document.getElementById("eatingMusic").play();
 }
 
 
 window.onload = function playBackground() {
- var background = document.getElementById("backgroundMusic").play();
+ document.getElementById("backgroundMusic").play();
 }
 
 
