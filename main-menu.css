@@ -89,6 +89,8 @@ p2{
   font-family: "VT323";
   font-size: 1.4em;
   margin-top: 15px;
+  width:120px;
+  height: 50px;
 }
 
 #myProgress {
@@ -147,7 +149,3 @@ p5{
   width: 100%;
 }
 
-.play{
-  width:100px;
-  height: 50px;
-}
