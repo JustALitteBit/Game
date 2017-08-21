@@ -119,13 +119,13 @@ p4 {
 .clicks{
   display: block;
   margin-left: 45px;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
 p1{
   font-family: "VT323";
   font-size: 2em;
-  text-align: center;
+  text-align:center;
 }
 
 p3{
