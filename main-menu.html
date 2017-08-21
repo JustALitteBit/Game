@@ -16,16 +16,14 @@
   </a>
   </center>
   </div>
-  
+
     <div id="overlay2">
+      <a href="#game">
     <center>
     <img class="overlayImage2" id="img2" src="Howto.png" onclick="gameStartoff()">
-  </center>
+    </center>
+      </a>
   </div>
-  
-  <audio id="eatingMusic">
-    <source src="eating.mp3" type="audio/mpeg">
-  </audio>
 
 <center>
 <p1> Restaurant Menu </p1>
@@ -97,7 +95,7 @@
     </div>
   </div>
 
-  <center> <a href="#game"> <button class="orderbutton" onClick="order()";>Ready to Order</button> </a> </center>
+  <center> <button class="orderbutton" onClick="order()";>Ready to Order</button></center>
 
   <div id ="game">
 
@@ -114,7 +112,7 @@
    </div>
 
   <div id="countbtn">
-    <button class ="eatbutton" onclick="clicking(); playEating();" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
+    <button class ="eatbutton" onclick="clicking()" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
     <div id="clicks"><p1> Clicks </p1></div>
   </div>
 
