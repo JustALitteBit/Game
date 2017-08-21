@@ -1,123 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset = "UTF-8">
-
-  <link rel = "stylesheet" href="main-menu.css" type="text/css">
-  <script type="text/javascript" src="menu.js"> </script>
-  <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+  <link rel = "stylesheet"
+  type = "text/css"
+  href = "Game2.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
+<img id="Logo" class="Logo" width="782" height="211" src="Logo.PNG"></img>
+<a href="#">
+  <img id="StartButton" class="StartButton" src="StartButton.PNG" width="200" height="100" border="0" alt="StartButton" onclick = "GameIntro()">
+</a>
+<a href="https://justalittebit.github.io/Game/main-menu.html#menu">
+  <img id="StartGameButton" class="StartGameButton" src="StartButton.PNG" width="200" height="100">
+</a>
+<body onload="Intro()">
 
-
-<body>
-    <div id="overlay">
-    <center>
-      <a href="https://justalittebit.github.io/Game/GuiltTrip.html">
-    <img class="overlayImage" id="img" src="gameOver.png">
-  </a>
-  </center>
-  </div>
-
-    <div id="overlay2">
-      <a href="#game">
-    <center>
-    <img class="overlayImage2" id="img2" src="Howto.png" onclick="gameStartoff()">
-    </center>
-      </a>
-  </div>
-
-<center>
-<p1> Restaurant Menu </p1>
-</center>
-
-<div class="container">
-  <div class="outsidecol">
-    <p2> Main Dishes </p2>
-  <div class="insidecol">
-      <button onClick="showBorderBurger()" id="burgerbutton"> <img src="burger.png" alt="burger"> </button>
-      <br> Burger $3.50
-    </div>
-    <div class="insidecol">
-      <button onClick="showBorderSpaghetti()" id="spaghettibutton"> <img src="spaghetti.png" alt="spaghetti"> </button>
-      <br> Spaghetti $5.00
-    </div>
-    <div class="insidecol">
-      <button onClick="showBorderPizza()" id="pizzabutton"> <img src="pizza.png" alt="pizza"> </button>
-      <br> Pizza $2.50
-  </div>
-</div>
-    <div class="outsidecol">
-    <p2> Drinks </p2>
-    <div class="insidecol">
-      <button onClick="showBorderOJ()" id="ojbutton"> <img src="juice.png" alt="oj"> </button>
-      <br> Orange Juice $1.50
-    </div>
-    <div class="insidecol">
-      <button onClick="showBorderSoda()" id="sodabutton"> <img src="soda.png" alt="soda"> </button>
-      <br> Soda $1.00
-    </div>
-    <div class="insidecol">
-      <button onClick="showBorderCoffee()" id="coffeebutton"> <img src="coffee.png" alt="coffee"> </button>
-      <br> Coffee $2.00
-    </div>
-  </div>
-
-    <div class="outsidecol">
-      <p2> Side Dishes </p2>
-       <div class="insidecol">
-         <!-- change pic and idname after a new pic is added! -->
-        <button onClick="showBorderSalad()" id="saladbutton"><img src="salad.png" alt="salad"> </button>
-        <br> Salad $2.50
-      </div>
-      <div class="insidecol">
-        <!-- change pic and idname after a new pic is added! -->
-       <button onClick="showBorderNuggets()" id="nuggetsbutton"><img src="nuggets.png" alt="nuggets"> </button>
-        <br> Chicken Nuggets $2.00
-      </div>
-      <div class="insidecol">
-        <button onClick="showBorderFries()" id = "friesbutton">  <img src="fries.png" alt="fries"> </button>
-        <br> Fries $1.50
-    </div>
-  </div>
-
-    <div class="outsidecol">
-      <div class="insidecol">
-        <button onClick="showBorderParfait()" id = "parfaitbutton">  <img src="parfait.png" alt="parfait"> </button>
-        <br> Parfait $3.00
-      </div>
-      <div class="insidecol">
-        <button onClick="showBorderSoup()" id = "soupbutton">  <img src="soup.png" alt="soup"> </button>
-        <br> Soup $3.00
-      </div>
-      <div class="insidecol">
-        <button onClick="showBorderCheesecake()" id = "cheesecakebutton">  <img src="cheesecake.png" alt="cheesecake"> </button>
-        <br> Cheesecake $2.50
-      </div>
-    </div>
-  </div>
-
-  <center> <button class="orderbutton" onClick="order()";>Ready to Order</button></center>
-
-  <div id ="game">
-
-  <center><button id = "startButton" class="play" onclick="checkstart()">Start</button> </center>
-
-  <h3>Time Meter:</h3>
-
-  <div id="myProgress">
-    <div id="myBar">0%</div>
-  </div>
-
-  <div id="food">
-    <img class ="food" src="" alt="food">
-   </div>
-
-  <div id="countbtn">
-    <button class ="eatbutton" onclick="clicking()" id="eatButton"> <img src="eatbutton.png" alt="eating button"> </button>
-    <div id="clicks"><p1> Clicks </p1></div>
-  </div>
-
-  </div>
-
-
+  <canvas id="myCanvas" width="1300" height="640">
+  </canvas>
+  <script type="text/javascript" src="Game2.js"></script>
+    <!-- <script type="text/javascript" src="Slide5.js"></script> -->
 </body>
 </html>
