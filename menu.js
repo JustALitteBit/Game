@@ -559,7 +559,7 @@ function move() {
       clearInterval(id);
       go = true;
       if (go == true) {
-      on();
+      gameOveron();
     }
       //image code
     } else {
@@ -571,12 +571,16 @@ function move() {
   }
 }
 
-function on() {
+function gameOveron() {
     document.getElementById("overlay").style.display = "block";
 }
 
-function off() {
-    document.getElementById("overlay").style.display = "none";
+function gameStarton(){
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function gameStartoff(){
+  document.getElementById("overlay2").style.display = "none";
 }
 
 function checkstart() {
