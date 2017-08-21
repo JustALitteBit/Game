@@ -1,6 +1,6 @@
 html{
   background-color: #FFFAC4;
-  font-family: "Assistant", sans-serif;
+  font-family: "VT323";
 }
 
 
@@ -69,9 +69,17 @@ p2{
 .orderbutton {
   background-color: white;
   color: black;
-  font-family: "Assistant", sans-serif;
+  font-family: "VT323";
   font-size: 1.4em;
   margin-top: 30px;
+}
+
+.startbutton{
+  background-color: white;
+  color: black;
+  font-family: "VT323";
+  font-size: 1.4em;
+  margin-top: 45px;
 }
 
 #myProgress {
@@ -89,11 +97,10 @@ p2{
 }
 
 h3 {
-  font-family: "Assistant";
+  font-family: "VT323";
   font-size:1.4em;
+  color: black;
 }
-
-
 
 
 .clicks{
@@ -103,7 +110,7 @@ h3 {
 }
 
 p1{
-  font-family: "Assistant", sans-serif;
+  font-family: "VT323";
   font-size: 2em;
   text-align: center;
 }
@@ -113,6 +120,8 @@ p1{
   margin-top: 200px;
 }
 
+
+
 #countbtn{
   margin-left: 20px;
 }
@@ -120,20 +129,10 @@ p1{
 #game{
   margin-top: 50px;
   height:100%;
-  width: 100%; 
+  width: 100%;
 }
 
 .play{
   width:100px;
   height: 50px;
 }
-
-#food{
-  background-image: url("background.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center;
-  height:80%;
-  z-index:0; 
-}
-
