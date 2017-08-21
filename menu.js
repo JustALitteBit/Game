@@ -554,7 +554,7 @@ function move() {
   function frame() {
     if (width >= 100) {
       clearInterval(id);
-      window.location.replace("http://justalittebit.github.io/Game/GuiltTrip.html");
+      window.location.replace("http://justalittebit.github.io/Game/GuiltTrip.html#");
     } else {
       width++;
       elem.style.width = width + '%';
@@ -562,6 +562,12 @@ function move() {
     }
   }
 }
+//    function redirectUser() {
+//           console.log("https://justalittebit.github.io/Game/GuiltTrip.html#");
+//           window.location = "http://www.google.com";
+//         }
+
+
 
 function checkstart() {
   if (user_order.length == 0) {
