@@ -515,7 +515,10 @@ function order(){
       var answer = confirm ("You ordered " + user_order +". Ready to play?");
       if (answer){
       // location.hash="#game";
+       gameStarton();
+       if(window.onclick){
       document.getElementById("game").scrollIntoView(); 
+       }
     }
   }
 }
