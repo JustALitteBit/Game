@@ -116,11 +116,15 @@ p4 {
   color: black;
 }
 
+.foodOrder {
+  margin-left:60px;
+}
+
 
 .clicks{
   display: block;
-  margin-left: 45px;
-  font-size: 1.25em;
+  margin-left: 0px;
+  font-size: 1.1em;
 }
 
 p1{
