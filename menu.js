@@ -562,10 +562,6 @@ function move() {
     }
   }
 }
-//    function redirectUser() {
-//           console.log("https://justalittebit.github.io/Game/GuiltTrip.html#");
-//           window.location = "http://www.google.com";
-//         }
 
 
 
