@@ -6,6 +6,7 @@ function playEating() {
 function showGame() {
   document.getElementById('game').style.display = "block";
   document.getElementById('menu').style.display = "none";
+}
 
 
 window.onload = function playBackground() {
