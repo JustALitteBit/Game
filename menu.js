@@ -594,7 +594,11 @@ function gameStartoff(){
 function checkstart() {
   if (user_order.length == 0) {
     alert("You haven't ordered anything...");
-  } else {
+  }
+  else if(user_order.length==1){
+    alert("One more item won't hurt.");
+  }
+  else {
     var hide = document.getElementById('startButton');
     hide.style.visibility = "hidden"
     move()
@@ -603,6 +607,7 @@ function checkstart() {
 
 var counter = 0;
 function clicking(){
+  if(user_order.length>=2){
   counter +=1;
   document.getElementById("clicks").innerHTML = counter;
 
@@ -611,11 +616,10 @@ function clicking(){
   if (counter > checkpt) {
     changeimg(i+1);
     checkpt+=60;
-
   }
 }
+  }
 }
-
 function changeimg(i){
 var container = document.getElementById("food");
 // container.innerHTML = "<img src='"+img_src[i]+"' alt='my image'>";
