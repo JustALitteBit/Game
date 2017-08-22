@@ -15,6 +15,7 @@ z-index:0;
 .foodOrder{
 margin-right:450px;
 margin-top:150px;
+position: absolute;
 }
 
 .outsidecol{
