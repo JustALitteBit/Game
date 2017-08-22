@@ -582,7 +582,6 @@ function order(){
 
 // var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
 
-var counter = 0;
 
 
 function move() {
