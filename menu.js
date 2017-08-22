@@ -556,8 +556,9 @@ function order(){
 // }
 
 // var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
-var itemNum = img_src.length * 60;
+
 var counter = 0;
+
 
 function move() {
   changeimg(0);
@@ -565,17 +566,13 @@ function move() {
   var width = 0;
   var id = setInterval(frame, 500);
   function frame() {
+    var itemNum = user_order.length * 60;
     if (width >= 100) {
       clearInterval(id);
-      if (counter < itemNum){
+      if (counter < itemNum) {
       go = true;
       if (go == true) {
       gameOveron();
-    }
-  } else if (counter>= itemNum){
-    go = true;
-    if (go==true){
-      goodJobon();
     }
   }
       //image code
@@ -584,6 +581,12 @@ function move() {
       width=width+2;
       elem.style.width = width + '%';
       elem.innerHTML = width * 1  + '%';
+      if (counter >= itemNum){
+        go = true;
+        if (go==true){
+          goodJobon();
+        }
+      }
     }
   }
 }
