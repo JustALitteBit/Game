@@ -1,6 +1,6 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-var GT = document.images["GTgood"];
+var GTgood = document.images["GTgood"];
 
 
 function Slide1(){
