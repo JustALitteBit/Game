@@ -586,6 +586,7 @@ var counter = 0;
 
 function move() {
   changeimg(0);
+  document.getElementById('eatButton').style.display = 'block';
   var elem = document.getElementById("myBar");
   var width = 0;
   var id = setInterval(frame, 500);
