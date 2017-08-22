@@ -56,7 +56,7 @@
     <p2> Main Dishes </p2>
   <div class="insidecol">
       <button onClick="showBorderBurger()" id="burgerbutton"> <img src="burger.png" alt="burger"> </button>
-    <br> <p3>Burger $3.50</p3>
+    <br> <p3>Burger $3.75</p3>
     </div>
     <div class="insidecol">
       <button onClick="showBorderSpaghetti()" id="spaghettibutton"> <img src="spaghetti.png" alt="spaghetti"> </button>
@@ -79,7 +79,7 @@
     </div>
     <div class="insidecol">
       <button onClick="showBorderCoffee()" id="coffeebutton"> <img src="coffee.png" alt="coffee"> </button>
-      <br> <p3>Coffee $2.00</p3>
+      <br> <p3>Coffee $1.75</p3>
     </div>
   </div>
 
@@ -88,7 +88,7 @@
        <div class="insidecol">
          <!-- change pic and idname after a new pic is added! -->
         <button onClick="showBorderSalad()" id="saladbutton"><img src="salad.png" alt="salad"> </button>
-         <br> <p3>Salad $2.50</p3>
+         <br> <p3>Salad $2.75</p3>
       </div>
       <div class="insidecol">
         <!-- change pic and idname after a new pic is added! -->
@@ -97,14 +97,14 @@
       </div>
       <div class="insidecol">
         <button onClick="showBorderFries()" id = "friesbutton">  <img src="fries.png" alt="fries"> </button>
-        <br> <p3>Fries $1.50</p3>
+        <br> <p3>Fries $1.25</p3>
     </div>
   </div>
 
     <div class="outsidecol">
       <div class="insidecol">
         <button onClick="showBorderParfait()" id = "parfaitbutton">  <img src="parfait.png" alt="parfait"> </button>
-        <br> <p3>Parfait $3.00</p3>
+        <br> <p3>Parfait $3.25</p3>
       </div>
       <div class="insidecol">
         <button onClick="showBorderSoup()" id = "soupbutton">  <img src="soup.png" alt="soup"> </button>
@@ -112,15 +112,15 @@
       </div>
       <div class="insidecol">
         <button onClick="showBorderCheesecake()" id = "cheesecakebutton">  <img src="cheesecake.png" alt="cheesecake"> </button>
-        <br> <p3>Cheesecake $2.50</p3>
+        <br> <p3>Cheesecake $2.25</p3>
       </div>
     </div>
   </div>
 
-  <center> <button class="orderbutton" onClick="order()";>Ready to Order</button></center>
-  
+  <center> <button id="orderbutton" class="orderbutton" onClick="order()";>Ready to Order</button></center>
+
   </div>
-  
+
   <div id ="game">
 
   <center><button id = "startButton" class="play" onclick="checkstart()">Start Eating</button> </center>
@@ -139,7 +139,7 @@
 
   <button class ="eatbutton" onclick="clicking(); playEating();" id="eatButton"> EAT </button>
   <div id="clicks" class="clicks">  <p5>Bites Taken</p5></div>
-    
+
   </div>
 
 </body>
