@@ -4,20 +4,27 @@ html{
 }
 
 #food{
- background-image: url("background.png");
- background-repeat: no-repeat;
+background-image: url("background.png");
+background-repeat: no-repeat;
 background-size: 80%;
 background-position: center;
-height:80%;
+height:90%;
 z-index:0;
 }
 
-.foodOrder{
-right:480px;
+#food img{
+margin-left: 46.2%;
+position: absolute;
+margin-top: 14%;
+}
+
+/*.foodOrder{
+margin-right:480px;
 margin-top:150px;
 position: absolute;
 margin-left:100px;
-}
+}*/
+
 
 .outsidecol{
 display: inline-block;
@@ -123,9 +130,11 @@ p4 {
 }
 
 .clicks{
-  display: block;
-  margin-left: 30px;
   font-size: 1.25em;
+  z-index:1;
+  margin-left:20%;
+  margin-top: -10%;
+  position: relative;
 }
 
 p1{
@@ -150,11 +159,29 @@ p5{
   margin-top: 200px;
 }
 
-
-
-#countbtn{
-  margin-left: 20px;
+.eatbutton{
+  z-index:1;
+  margin-left:20%;
+  margin-top:-15%;
+  padding: 15px 25px;
+  cursor:pointer;
+  text-align: center;
+  padding:15px 25px;
+  text-decoration: none;
+  border: none;
+  border-radius:15px;
+  box-shadow: 0 9px #999;
+  background-color: #ff9966;
 }
+
+
+
+.eatbutton:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 
 #game{
   margin-top: 50px;
