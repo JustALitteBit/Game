@@ -3,6 +3,10 @@ function playEating() {
  document.getElementById("eatingMusic").play();
 }
 
+function showGame() {
+  document.getElementById('game').style.display = "block";
+  document.getElementById('menu').style.display = "none";
+
 
 window.onload = function playBackground() {
  document.getElementById("backgroundMusic").play();
@@ -504,18 +508,14 @@ function order(){
 
     if (user_order.length == 0) {
       alert("You must eat something! Why did you come here if you weren't going to order?");
-
-
-      }
-    else if (user_order.length<2){
+     } else if (user_order.length<2){
       alert("You must choose at least 2 items from the menu! Choose again.");
-
-    }
-    else {
+     } else {
       var answer = confirm ("You ordered " + user_order +". Ready to play?");
       if (answer){
       // location.hash="#game";
        gameStarton();
+       showGame();
        if(window.onclick){
       document.getElementById("game").scrollIntoView(); 
        }
