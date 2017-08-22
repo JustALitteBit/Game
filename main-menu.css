@@ -200,10 +200,12 @@ p5{
   transform: translateY(4px);
 }
 
-
-
+#menu{
+  display: block;
+}
 #game{
   margin-top: 50px;
   height:100%;
   width: 100%;
+  display: none;
 }
