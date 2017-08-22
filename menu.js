@@ -21,10 +21,15 @@ img_src = []
 // make sure to allow to the user to adjust the amt of side dishes they want with up and down arrows
 function budget() {
   var spent=0;
+  var orderbtn=document.getElementById("orderbutton");
   for (var i = 0; i<order_price.length; i++) {
     spent += order_price[i];
-      if (spent > 25) {
-      alert("You spent $" + spent + ". You exceeded your budget of $25. Please change your order.")
+      if (spent<=25){
+      orderbtn.style.display="block";
+      }
+      else if (spent > 25) {
+      alert("You spent $" + spent + ". You exceeded your budget of $25. Please change your order and the Ready to Order button will reappear.")
+      orderbtn.style.display="none";
       }
   }
 }
@@ -32,7 +37,7 @@ function budget() {
 
 function side1() {
   user_order.push("fries");
-  order_price.push(1.5);
+  order_price.push(1.25);
   img_src.push("fries.png");
   console.log(user_order);
   console.log(order_price);
@@ -41,7 +46,7 @@ function side1() {
 
 function side2() {
   user_order.push("salad");
-  order_price.push(2.5);
+  order_price.push(2.75);
   img_src.push("salad.png");
   console.log(user_order);
   console.log(order_price);
@@ -68,7 +73,7 @@ function side4() {
 
 function side5() {
   user_order.push("cheesecake");
-  order_price.push(2.5);
+  order_price.push(2.25);
   img_src.push("cheesecake.png");
   console.log(user_order);
   console.log(order_price);
@@ -77,7 +82,7 @@ function side5() {
 
 function side6() {
   user_order.push("parfait");
-  order_price.push(3.0);
+  order_price.push(3.25);
   img_src.push("parfait.png");
   console.log(user_order);
   console.log(order_price);
@@ -102,8 +107,10 @@ function showBorderFries(){
       }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 1.5) {
+   if(order_price[i] == 1.25) {
       order_price.splice(i, 1);
+      budget();
+
    }
  }
  for(var i=img_src.length-1; i>=0; i--){
@@ -130,8 +137,10 @@ function showBorderSalad(){
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 2.5) {
+   if(order_price[i] == 2.75) {
       order_price.splice(i, 1);
+      budget();
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
@@ -162,6 +171,8 @@ function showBorderNuggets(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.0) {
       order_price.splice(i, 1);
+      budget();
+
 
    }
   }
@@ -192,6 +203,8 @@ function showBorderSoup(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 3.0) {
       order_price.splice(i, 1);
+      budget();
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
@@ -220,8 +233,10 @@ function showBorderCheesecake(){
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 2.5) {
+   if(order_price[i] == 2.25) {
       order_price.splice(i, 1);
+      budget();
+
 
    }
   }
@@ -250,8 +265,9 @@ function showBorderParfait(){
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 3.0) {
+   if(order_price[i] == 3.25) {
       order_price.splice(i, 1);
+      budget();
 
    }
   }
@@ -267,7 +283,7 @@ function showBorderParfait(){
 
 function main1() {
   user_order.push("burger");/*comment*/
-  order_price.push(3.5);
+  order_price.push(3.75);
   img_src.push("burger.png");
   console.log(user_order);
   console.log(order_price);
@@ -310,8 +326,9 @@ function showBorderBurger(){
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 3.5) {
+   if(order_price[i] == 3.75) {
       order_price.splice(i, 1);
+      budget();
 
    }
   }
@@ -343,6 +360,7 @@ function showBorderSpaghetti(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 5.0) {
       order_price.splice(i, 1);
+      budget();
 
    }
   }
@@ -374,6 +392,7 @@ function showBorderPizza(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 2.50) {
       order_price.splice(i, 1);
+      budget();
 
    }
   }
@@ -406,7 +425,7 @@ function drink2() {
 
 function drink3() {
   user_order.push("coffee");
-  order_price.push(2.0);
+  order_price.push(1.75);
   img_src.push("coffee.png");
   console.log(user_order);
   console.log(order_price);
@@ -432,6 +451,8 @@ function showBorderOJ(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 1.5) {
       order_price.splice(i, 1);
+      budget();
+
    }
   }
   for(var i=img_src.length-1; i>=0; i--){
@@ -462,6 +483,7 @@ function showBorderSoda(){
   for(var i = order_price.length - 1; i >= 0; i--) {
    if(order_price[i] == 1.0) {
       order_price.splice(i, 1);
+      budget();
 
    }
   }
@@ -492,8 +514,10 @@ function showBorderCoffee(){
     }
   }
   for(var i = order_price.length - 1; i >= 0; i--) {
-   if(order_price[i] == 2.0) {
+   if(order_price[i] == 1.75) {
       order_price.splice(i, 1);
+      budget();
+
 
    }
   }
@@ -518,7 +542,7 @@ function order(){
        gameStarton();
        showGame();
        if(window.onclick){
-      document.getElementById("game").scrollIntoView(); 
+      document.getElementById("game").scrollIntoView();
        }
     }
   }
@@ -563,7 +587,6 @@ var counter = 0;
 
 function move() {
   changeimg(0);
-  document.getElementById('eatButton').style.display = "block";
   var elem = document.getElementById("myBar");
   var width = 0;
   var id = setInterval(frame, 500);
@@ -628,7 +651,7 @@ function checkstart() {
   }
 }
 
-//var counter = 0;
+var counter = 0;
 function clicking(){
   if(user_order.length>=2){
   counter +=1;
