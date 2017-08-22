@@ -604,10 +604,14 @@ function gameStarton(){
   document.getElementById("overlay2").style.display = "block";
 }
 
-function gameStartoff(){
-  document.getElementById("overlay2").style.display = "none";
+function howtoC(){
+  document.getElementById("overlay4").style.display = "block";
 }
 
+function gameStartoff(){
+  document.getElementById("overlay2").style.display = "none";
+  document.getElementById("overlay4").style.display = "none";
+}
 
 function checkstart() {
   if (user_order.length == 0) {
