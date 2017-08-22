@@ -582,7 +582,7 @@ function order(){
 
 // var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
 
-
+var counter = 0;
 
 function move() {
   changeimg(0);
@@ -650,7 +650,7 @@ function checkstart() {
   }
 }
 
-var counter = 0;
+
 function clicking(){
   if(user_order.length>=2){
   counter +=1;
