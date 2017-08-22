@@ -556,6 +556,8 @@ function order(){
 // }
 
 // var img_src=["juice.png", "coffee.png", "nuggets.png", "fries.png", "cheesecake.png"];
+var itemNum = img_src.length * 60;
+var counter = 0;
 
 function move() {
   changeimg(0);
@@ -565,10 +567,17 @@ function move() {
   function frame() {
     if (width >= 100) {
       clearInterval(id);
+      if (counter < itemNum){
       go = true;
       if (go == true) {
       gameOveron();
     }
+  } else if (counter>= itemNum){
+    go = true;
+    if (go==true){
+      goodJobon();
+    }
+  }
       //image code
     } else {
       go = false;
@@ -583,6 +592,10 @@ function gameOveron() {
     document.getElementById("overlay").style.display = "block";
 }
 
+function goodJobon(){
+    document.getElementById("overlay3").style.display = "block";
+}
+
 function gameStarton(){
   document.getElementById("overlay2").style.display = "block";
 }
@@ -590,6 +603,7 @@ function gameStarton(){
 function gameStartoff(){
   document.getElementById("overlay2").style.display = "none";
 }
+
 
 function checkstart() {
   if (user_order.length == 0) {
@@ -605,7 +619,7 @@ function checkstart() {
   }
 }
 
-var counter = 0;
+//var counter = 0;
 function clicking(){
   if(user_order.length>=2){
   counter +=1;
