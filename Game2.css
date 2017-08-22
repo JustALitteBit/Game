@@ -23,7 +23,16 @@ canvas {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -250px;
+  margin-top: 100px;
+  display: block;
+}
+
+.GoToWeb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 0px;
   margin-top: 100px;
   display: block;
 }
@@ -31,7 +40,7 @@ canvas {
 .StartGameButton{
   visibility:hidden;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   margin-left: -90px;
   margin-top: 155px;
